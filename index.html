@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="main">
+        <button type="button" id="print">print</button>
+        <div id="screenshot">
+            <div>제목</div>
+            <div>이름</div>
+            <table>
+                <tr>
+                    <th>제목</th>
+                    <th>금액</th>
+                </tr>
+                <tr>
+                    <td>a</td>
+                    <td>100000</td>
+                </tr>
+                <tr>
+                    <td>a</td>
+                    <td>100000</td>
+                </tr>
+                <tr>
+                    <td>a</td>
+                    <td>100000</td>
+                </tr>
+                <tr>
+                    <td>a</td>
+                    <td>100000</td>
+                </tr>
+                <tr>
+                    <td>a</td>
+                    <td>100000</td>
+                </tr>
+                <tr>
+                    <td>a</td>
+                    <td>100000</td>
+                </tr>
+                <tr>
+                    <td>a</td>
+                    <td>100000</td>
+                </tr>
+                <tr>
+                    <td>a</td>
+                    <td>100000</td>
+                </tr>
+                <tr>
+                    <td>a</td>
+                    <td>100000</td>
+                </tr>
+                
+                <tr>
+                    <td>a</td>
+                    <td>100000</td>
+                </tr>
+                <tr>
+                    <td>a</td>
+                    <td>100000</td>
+                </tr>
+                <tr>
+                    <td>a</td>
+                    <td>100000</td>
+                </tr>
+                <tr>
+                    <td>a</td>
+                    <td>100000</td>
+                </tr>
+                <tr>
+                    <td>a</td>
+                    <td>100000</td>
+                </tr>
+                <tr>
+                    <td>a</td>
+                    <td>100000</td>
+                </tr>
+                <tr>
+                    <td>a</td>
+                    <td>100000</td>
+                </tr>
+                <tr>
+                    <td>a</td>
+                    <td>100000</td>
+                </tr>
+                <tr>
+                    <td>a</td>
+                    <td>100000</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id="img"></div>
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script>
+        $(()=>{
+            $("#print").click(()=>{
+                html2canvas($('#screenshot').get(0)).then(canvas=>{
+                    document.getElementById('img').appendChild(canvas)
+                });
+            });
+            
+        });
+    </script>
+</body>
+</html>
